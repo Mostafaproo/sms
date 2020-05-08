@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SMS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" href="../assets/css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+
+  <!-- Start Top Bar================================================================== -->
+  <div class="top-bar">
+    <div class="content-top-nav">
+      <div class="price">
+        <p>رصيدك النقدى 00 ريال</p>
+      </div>
+
+
+      <div class="dropdown show">
+        <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <img src="../assets/images/avatar.png" alt="">
+
+        </a>
+
+        <div class="dropdown-menu text-right" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">معلومات الحساب</a>
+          <a class="dropdown-item" href="#">الرقم المفضل </a>
+          <a class="dropdown-item" href="#">عناوين الارسال </a>
+          <a class="dropdown-item" href="#"> اتصل بنا </a>
+          <a class="dropdown-item" href="#"> الخروج </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fixed Menu======================================================================== -->
+  <div class="fixed-menu text-right">
+    <i class="fa fa-bars toggler"></i>
+
+    <div class="logo-admin">
+      <img src="../assets/images/avatar.png" alt="">
+    </div>
+    <ul class="list-unstyled primary-ul">
+      <li>
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> الرئيسيه </a>
+      </li>
+
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> ارسال الرسائل</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="specialist-sms.html"><i class="fa fa-fw fa-angle-double-left"></i> الرسائل المخصصه</a></li>
+          <li><a href="smart-sms.html"><i class="fa fa-fw fa-angle-double-left"></i> الرسائل الذكيه</a></li>
+          <li><a href="send-sms-file.html"><i class="fa fa-fw fa-angle-double-left"></i> ارسال رساله من ملف</a></li>
+          <li><a href="send-sms-groups.html"><i class="fa fa-fw fa-angle-double-left"></i> ارسال للارقام والمجموعات </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Start Sub Menu -->
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> شحن الرصيد</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="charg-account.html"><i class="fa fa-fw fa-angle-double-left"></i> شحن الحساب </a></li>
+          <li><a href="charg-moving.html"><i class="fa fa-fw fa-angle-double-left"></i> حركات الرصيد </a></li>
+          <li><a href="charg-reward.html"><i class="fa fa-fw fa-angle-double-left"></i> برنامج مكافأت</a></li>
+          <li><a href="charg-requst.html"><i class="fa fa-fw fa-angle-double-left"></i> طلبات الشحن </a></li>
+        </ul>
+      </li>
+
+
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> الارقام والمجموعات</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="#"><i class="fa fa-fw fa-angle-double-left"></i> نص جديد 2</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-angle-double-left"></i> نص جديد 2</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-angle-double-left"></i> نص جديد 2</a></li>
+        </ul>
+      </li>
+
+
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> حسابى</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="./my-account.html"><i class="fa fa-fw fa-angle-double-left"></i>معلومات الحساب </a></li>
+        </ul>
+      </li>
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> سجل الرسائل</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="./going-message.html"><i class="fa fa-fw fa-angle-double-left"></i>الرسائل الصادره</a></li>
+          <li><a href="./temporary-message.html"><i class="fa fa-fw fa-angle-double-left"></i> الرسائل المؤقته</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="./ready-sms.html"><i class="fa fa-fw fa-home"></i> الرسائل الجاهزه </a>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div class="content-body">
+    <div class="head-ready-sms text-right">
+      <h5>قوالبى الجاهزة</h5>
+    </div>
+
+    <div class="ready-sms">
+      <form action="">
+        <div class="row text-right rest">
+          <div class="col-md-6">
+
+            <div class="z-radio">
+              <input type="radio" name="custom" id="newt" data-toggle="collapse" data-target="#collapseOne" checked>
+              <label for="newt">الان</label>
+              <!-- this is span for only margin betwwin input in css style -->
+              <span></span>
+              <span></span>
+
+              <input type="radio" name="custom" id="ddd" data-toggle="collapse" data-target="#collapseOne" checked>
+              <label for="ddd">الان</label>
+            </div>
+
+            <p>عنوان القالب</p>
+            <input type="text">
+
+            <!-- Add messages -->
+            <div class="add-message">
+              <p>نص الرساله :</p>
+              <button class="btn-global-style">اضافة مرفق</button>
+
+              <textarea name="" id="" cols="80" rows="5"></textarea>
+              <span>0/1</span>
+
+            </div>
+
+            <!-- buttons send -->
+            <div class="btns">
+              <button class="text-center btn-global-style" style="background-color: #b1b82c; color: #fff;">حفظ
+              </button>
+              <!-- <button class="text-center btn-global-style"> مسح</button> -->
+            </div>
+
+          </div>
+
+      </form>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="../assets/js/jquery-3.4.0.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SMS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" href="../assets/css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+
+  <!-- Start Top Bar================================================================== -->
+  <div class="top-bar">
+    <div class="content-top-nav">
+      <div class="price">
+        <p>رصيدك النقدى 00 ريال</p>
+      </div>
+
+
+      <div class="dropdown show">
+        <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <img src="../assets/images/avatar.png" alt="">
+
+        </a>
+
+        <div class="dropdown-menu text-right" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">معلومات الحساب</a>
+          <a class="dropdown-item" href="#">الرقم المفضل </a>
+          <a class="dropdown-item" href="#">عناوين الارسال </a>
+          <a class="dropdown-item" href="#"> اتصل بنا </a>
+          <a class="dropdown-item" href="#"> الخروج </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fixed Menu======================================================================== -->
+  <div class="fixed-menu text-right">
+    <i class="fa fa-bars toggler"></i>
+
+    <div class="logo-admin">
+      <img src="../assets/images/avatar.png" alt="">
+    </div>
+    <ul class="list-unstyled primary-ul">
+      <li>
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> الرئيسيه </a>
+      </li>
+
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> ارسال الرسائل</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="specialist-sms.html"><i class="fa fa-fw fa-angle-double-left"></i> الرسائل المخصصه</a></li>
+          <li><a href="smart-sms.html"><i class="fa fa-fw fa-angle-double-left"></i> الرسائل الذكيه</a></li>
+          <li><a href="send-sms-file.html"><i class="fa fa-fw fa-angle-double-left"></i> ارسال رساله من ملف</a></li>
+          <li><a href="send-sms-groups.html"><i class="fa fa-fw fa-angle-double-left"></i> ارسال للارقام والمجموعات </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Start Sub Menu -->
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> شحن الرصيد</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="charg-account.html"><i class="fa fa-fw fa-angle-double-left"></i> شحن الحساب </a></li>
+          <li><a href="charg-moving.html"><i class="fa fa-fw fa-angle-double-left"></i> حركات الرصيد </a></li>
+          <li><a href="charg-reward.html"><i class="fa fa-fw fa-angle-double-left"></i> برنامج مكافأت</a></li>
+          <li><a href="charg-requst.html"><i class="fa fa-fw fa-angle-double-left"></i> طلبات الشحن </a></li>
+        </ul>
+      </li>
+
+
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> الارقام والمجموعات</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="#"><i class="fa fa-fw fa-angle-double-left"></i> نص جديد 2</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-angle-double-left"></i> نص جديد 2</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-angle-double-left"></i> نص جديد 2</a></li>
+        </ul>
+      </li>
+
+
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> حسابى</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="./my-account.html"><i class="fa fa-fw fa-angle-double-left"></i>معلومات الحساب </a></li>
+        </ul>
+      </li>
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> سجل الرسائل</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="./going-message.html"><i class="fa fa-fw fa-angle-double-left"></i>الرسائل الصادره</a></li>
+          <li><a href="./temporary-message.html"><i class="fa fa-fw fa-angle-double-left"></i> الرسائل المؤقته</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="./ready-sms.html"><i class="fa fa-fw fa-home"></i> الرسائل الجاهزه </a>
+      </li>
+
+
+    </ul>
+  </div>
+
+  <div class="content-body">
+    <div class="my-account">
+      <h2 class="title text-right">معلومات الحساب </h2>
+
+
+      <div class="tabs text-right">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#main-data" role="tab"
+              aria-controls="pills-home" aria-selected="true"><i class="fa fa-user"></i> البيانات الاساسيه </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#my-favorite" role="tab"
+              aria-controls="pills-profile" aria-selected="false"><i class="fa fa-heart"></i> التفضيلات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#notfication" role="tab"
+              aria-controls="pills-contact" aria-selected="false"><i class="fa fa-bell"></i> الاشعارات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#secure" role="tab"
+              aria-controls="pills-contact" aria-selected="false"><i class="fa fa-lock"></i> الحمايه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#settings" role="tab"
+              aria-controls="pills-contact" aria-selected="false"><i class="fa fa-cog"></i> اعدادات متقدمه</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="main-data" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="maindata">
+              <div class="row rest">
+                <div class="col-md-6">
+                  <div class="const-data">
+                    <form action="">
+                      <p>اسم المستخدم</p>
+                      <input class="input-tab" type="text" name="" id="">
+                      <p>الاسم الكامل</p>
+                      <input class="input-tab" type="text" name="" id="">
+                      <p>رقم الجوال</p>
+                      <input class="input-tab" type="number" name="" id="">
+                      <p>البريد الالكترونى</p>
+                      <input class="input-tab" type="email" name="" id="">
+                      <p>الدوله</p>
+                      <select name="" id="">
+                        <option value="">الدوله</option>
+                      </select>
+                      <p>الجنس</p>
+                      <div class="notify">
+                        <div class="z-radio">
+                          <input type="radio" name="custom" id="male" checked>
+                          <label for="male">ذكر</label>
+                        </div>
+                        <div class="z-radio">
+                          <input type="radio" name="custom" id="famle" checked>
+                          <label for="famle">انثى</label>
+                        </div>
+                        <div></div>
+                        <p>تاريخ الاشتراك</p>
+                        <input style="width: 100%;" type="date" name="" id="">
+                      </div>
+                      <p class="mr">الرصيد</p>
+                      <input class="input-tab" type="number" name="" id="">
+                      <p>تاريخ انتهاء الرصيد</p>
+                      <input class="input-tab" type="date" name="" id="">
+                      <p class="mr">جهة استخدام الرسائل</p>
+                      <select name="" id="">
+                        <option value="">جهه تجاريه</option>
+                      </select>
+                      <p class="mr">الاســم الظاهرى</p>
+                      <input style="width: 100%;" type="text" name="" id="">
+                      <p>تاريخ الميلاد</p>
+                      <input style="width: 100%;" type="date" name="" id="">
+                      <div class="uploud-file mr">
+                        <p> السجل التجارى</p>
+                        <!-- <input type="file" name="" id=""> -->
+                        <div class="custom-file text-left">
+                          <input type="file" class="custom-file-input " id="customFile">
+                          <label class="custom-file-label" for="customFile">اختيار ملف</label>
+                        </div>
+                      </div>
+                      <div class="uploud-file mr">
+                        <p> خطاب السم المرسل</p>
+                        <!-- <input type="file" name="" id=""> -->
+                        <div class="custom-file text-left">
+                          <input type="file" class="custom-file-input " id="customFile">
+                          <label class="custom-file-label" for="customFile">اختيار ملف</label>
+                        </div>
+                      </div>
+                      <!--End -->
+                      <span>ملاحظه خطاب اسم المرسل "يطبع ويوقع" لتحميل ملف : <a href="#">الشركات</a></span>
+                      <h5>تاريخ انتهاء صلاحية الرسائل: 13-10-2020</h5>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="my-favorite" role="tabpanel" aria-labelledby="pills-profile-tab">التفضيلات
+          </div>
+          <!-- Start tab notfication -->
+          <div class="tab-pane fade" id="notfication" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="notify">
+              <p>استلام اشعار عند انخفاض الرصيد</p>
+              <div class="z-radio">
+                <input type="radio" name="custom" id="yes" checked>
+                <label for="yes">نعم</label>
+              </div>
+              <div class="z-radio">
+                <input type="radio" name="custom" id="no" checked>
+                <label for="no">لا</label>
+              </div>
+              <p></p>
+              <button class="text-center btn-global-style" style="background-color: #b1b82c; color: #fff;">
+                حفظ</button>
+            </div>
+          </div>
+          <!--Start Tab Secure -->
+          <div class="tab-pane fade" id="secure" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+            <div class="secure">
+              <h6><i class="fa fa-lock"></i>  تغيير كلمة السر </h6>
+              <form action="">
+                <input type="password" placeholder="كلمة السر القديمه">
+                <input type="password" placeholder="كلمة السر الجديده">
+                <input type="password" placeholder="تـأكيد كلمة السر الجديده">
+
+                <button class="btn btn-info btn-change">تغيير</button>
+              </form>
+            </div>
+
+
+          </div>
+          <!-- Start tab SEttings -->
+          <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="pills-contact-tab"> 
+            <p>منع تكرار الارسال</p>
+            <div class="select">
+              <select name="slct" id="slct">
+                <option selected disabled>Choose an option</option>
+                <option value="1">5</option>
+                <option value="2">10</option>
+                <option value="3">15</option>
+              </select>
+            </div>
+
+            <p class="mr"> عنوان الارسال الافتراضى </p>
+            <div class="select">
+              <select name="slct" id="slct">
+                <option selected disabled>Choose an option</option>
+                <option value="1">5</option>
+                <option value="2">10</option>
+                <option value="3">15</option>
+              </select>
+            </div>
+
+
+            <div class="notify mr">
+              <p> تفعيل الرساله الدوليه </p>
+              <div class="z-radio">
+                <input type="radio" name="custom" id="yes" checked>
+                <label for="yes">نعم</label>
+              </div>
+              <div class="z-radio">
+                <input type="radio" name="custom" id="no" checked>
+                <label for="no">لا</label>
+              </div>
+              <p></p>
+              <button class="text-center btn-global-style" style="background-color: #b1b82c; color: #fff;">
+                حفظ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="../assets/js/jquery-3.4.0.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

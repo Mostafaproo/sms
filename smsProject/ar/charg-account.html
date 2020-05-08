@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SMS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" href="../assets/css/bootstrap-rtl.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+
+  <!-- Start Top Bar================================================================== -->
+  <div class="top-bar">
+    <div class="content-top-nav">
+      <div class="price">
+        <p>رصيدك النقدى 00 ريال</p>
+      </div>
+
+
+      <div class="dropdown show">
+        <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <img src="../assets/images/avatar.png" alt="">
+
+        </a>
+
+        <div class="dropdown-menu text-right" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">معلومات الحساب</a>
+          <a class="dropdown-item" href="#">الرقم المفضل </a>
+          <a class="dropdown-item" href="#">عناوين الارسال </a>
+          <a class="dropdown-item" href="#"> اتصل بنا </a>
+          <a class="dropdown-item" href="#"> الخروج </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- fixed Menu======================================================================== -->
+  <div class="fixed-menu text-right">
+    <i class="fa fa-bars toggler"></i>
+
+    <div class="logo-admin">
+      <img src="../assets/images/avatar.png" alt="">
+    </div>
+    <ul class="list-unstyled primary-ul">
+      <li>
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> الرئيسيه </a>
+      </li>
+
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> ارسال الرسائل</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="specialist-sms.html"><i class="fa fa-fw fa-angle-double-left"></i> الرسائل المخصصه</a></li>
+          <li><a href="smart-sms.html"><i class="fa fa-fw fa-angle-double-left"></i> الرسائل الذكيه</a></li>
+          <li><a href="send-sms-file.html"><i class="fa fa-fw fa-angle-double-left"></i> ارسال رساله من ملف</a></li>
+          <li><a href="send-sms-groups.html"><i class="fa fa-fw fa-angle-double-left"></i> ارسال للارقام والمجموعات </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Start Sub Menu -->
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> شحن الرصيد</a>
+        <ul class="list-unstyled drop-menu">
+            <li><a href="charg-account.html"><i class="fa fa-fw fa-angle-double-left"></i> شحن الحساب </a></li>
+            <li><a href="charg-moving.html"><i class="fa fa-fw fa-angle-double-left"></i> حركات الرصيد </a></li>
+            <li><a href="charg-reward.html"><i class="fa fa-fw fa-angle-double-left"></i> برنامج مكافأت</a></li>
+            <li><a href="charg-requst.html"><i class="fa fa-fw fa-angle-double-left"></i> طلبات الشحن </a></li>
+        </ul>
+      </li>
+
+
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> الارقام والمجموعات</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="#"><i class="fa fa-fw fa-angle-double-left"></i> نص جديد 2</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-angle-double-left"></i> نص جديد 2</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-angle-double-left"></i> نص جديد 2</a></li>
+        </ul>
+      </li>
+
+
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> حسابى</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="./my-account.html"><i class="fa fa-fw fa-angle-double-left"></i>معلومات الحساب </a></li>
+        </ul>
+      </li>
+      <li class="menu">
+        <a href="#"><i class="fa fa-fw fa-bars"></i> سجل الرسائل</a>
+        <ul class="list-unstyled drop-menu">
+          <li><a href="./going-message.html"><i class="fa fa-fw fa-angle-double-left"></i>الرسائل الصادره</a></li>
+          <li><a href="./temporary-message.html"><i class="fa fa-fw fa-angle-double-left"></i> الرسائل المؤقته</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="./ready-sms.html"><i class="fa fa-fw fa-home"></i> الرسائل الجاهزه </a>
+      </li>
+
+
+    </ul>
+  </div>
+
+
+  <!-- Start content body -->
+  <div class="content-body">
+    <h2 class="title text-right">شحن الحساب </h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="section-charg text-right">
+            <h4 class="section-title">شحن الرصيد</h4>
+
+            <!-- Start Form -->
+            <form action="">
+              <select name="" id="" class="selection ">
+                <option value="">شحن حساب الرسائل النصيه</option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+
+              <input type="text" name="" id="" placeholder="1000">
+
+              <h6 class="text-center">يجب ان تكون الرسائل المطلوبه على الاقل 500 رساله</h6>
+
+              <input type="text" name="" id="" placeholder="175 ريال">
+              <select name="" id="" class="selection ">
+                <option value=""> هل قمت بإيداع المبلغ؟ نعم </option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+
+              <input type="text" name="" id="" placeholder="50">
+              <input type="text" name="" id="" placeholder="اسم المودع">
+              <input type="text" name="" id="" placeholder=" رقم حساب المودع">
+
+              <select name="" id="" class="selection ">
+                <option value=""> اختر طريقة الايداع </option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+              <input type="date" name="" id="">
+
+              <h6 class="text-danger text-center">ملاحظه: تاريخ الايداع وليس تاريخ ارسال طلب الشحن</h6>
+              <select name="" id="" class="selection ">
+                <option value=""> ادخل اسم البنك المحول اليه </option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+
+              <textarea name="" id="" cols="30" rows="5" placeholder="ملاحظات"></textarea>
+
+              <div class="info-charg">
+                <p>متطلبات شحن الحساب</p>
+                <ul class="list-unstyled">
+                  <li>1-للافراد يلزم ارسال اثبات الشخصيه لاتمام عملية الشحن </li>
+                  <li>2-للجهات الحكوميه او الخيريه او المدارس خطاب تعريف من الجهه المستخدمه للرسائل</li>
+                  <h7>ملاحظه هذه المتطلبات لمره واحده فقط فى حال تم ارسالها سابقا لا يلزم اعادة ارسالها</h7>
+                </ul>
+                <p>متطلبات ما بعد الشحن لتفعيل اسم المرسل</p>
+                <ul class="list-unstyled">
+                  <li>1-سجل تجارى من المستخدم النهائي لاسم المرسل فى حالة اسم المرسل المطلوب لغايات تجاريه واعلانيه
+                  </li>
+                  <li>2-خطاب تفعيل اسم المرسل يمكنك طلب الصيغه من خلال الدعم الفنى على الايميل suport@Alf-Cell.com</li>
+                </ul>
+              </div>
+              <button class="send">ارسال</button>
+            </form>
+            <!-- End form -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="../assets/js/jquery-3.4.0.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
